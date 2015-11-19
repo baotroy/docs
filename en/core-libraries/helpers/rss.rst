@@ -61,6 +61,7 @@ the same::
                 'all',
                 array('limit' => 20, 'order' => 'Post.created DESC')
             );
+            $this->response->type("xml");
             return $this->set(compact('posts'));
         }
 
